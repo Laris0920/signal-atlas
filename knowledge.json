@@ -1,0 +1,1507 @@
+{
+  "schemaVersion": 2,
+  "collection": "Signal Atlas 近期披露与历史事件归档",
+  "checkedAt": "2026-10-27T14:28:21.967Z",
+  "scope": "30 条人工精选档案：16 条近期披露（2026-09-24 至 2026-10-27）与 14 条历史案例（2020–2024）；非实时资讯或行情，不声称覆盖全部市场事件及后续进展。",
+  "sources": [
+    {
+      "id": "arm-plan",
+      "publisher": "NVIDIA",
+      "publishedAt": "2020-09-13",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-to-acquire-arm-for-40-billion-creating-worlds-premier-computing-company-for-the-age-of-ai",
+      "title": "NVIDIA to Acquire Arm for $40 Billion",
+      "summary": "NVIDIA 与 SoftBank 宣布拟议收购交易，完成仍需监管批准。",
+      "checkedAt": "2026-10-27T11:51:44Z",
+      "precision": "day",
+      "verification": "已核验官方页面标题与相关正文；中文为摘要"
+    },
+    {
+      "id": "arm-end",
+      "publisher": "NVIDIA / SoftBank",
+      "publishedAt": "2022-02-07",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-and-softbank-group-announce-termination-of-nvidias-acquisition-of-arm-limited",
+      "title": "Termination of NVIDIA’s Acquisition of Arm Limited",
+      "summary": "双方因重大监管挑战终止此前宣布的 Arm 收购交易。",
+      "checkedAt": "2026-10-27T11:51:44Z",
+      "precision": "day",
+      "verification": "已核验官方页面标题与相关正文；中文为摘要"
+    },
+    {
+      "id": "nv-q1",
+      "publisher": "NVIDIA",
+      "publishedAt": "2024-05-22",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-first-quarter-fiscal-2025",
+      "title": "NVIDIA Q1 FY2025 Financial Results",
+      "summary": "披露季度收入约 260 亿美元，并宣布 10 拆 1 计划及拆分时间表。",
+      "checkedAt": "2026-10-27T11:51:44Z",
+      "precision": "day",
+      "verification": "已核验官方页面标题与相关正文；中文为摘要"
+    },
+    {
+      "id": "nv-q2",
+      "publisher": "NVIDIA",
+      "publishedAt": "2024-08-28",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2025",
+      "title": "NVIDIA Q2 FY2025 Financial Results",
+      "summary": "披露收入约 300 亿美元、Blackwell 样品交付，并回溯确认股票拆分已完成。",
+      "checkedAt": "2026-10-27T11:51:44Z",
+      "precision": "day",
+      "verification": "已核验官方页面标题与相关正文；中文为摘要"
+    },
+    {
+      "id": "vision-plan",
+      "publisher": "Apple",
+      "publishedAt": "2023-06-05",
+      "url": "https://www.apple.com/newsroom/2023/06/introducing-apple-vision-pro/",
+      "title": "Introducing Apple Vision Pro",
+      "summary": "Apple 发布 Vision Pro，初始计划次年率先在美国上市。",
+      "checkedAt": "2026-10-27T11:51:44Z",
+      "precision": "day",
+      "verification": "已核验官方页面标题与相关正文；中文为摘要"
+    },
+    {
+      "id": "vision-us",
+      "publisher": "Apple",
+      "publishedAt": "2024-01-08",
+      "url": "https://www.apple.com/newsroom/2024/01/apple-vision-pro-available-in-the-us-on-february-2/",
+      "title": "Apple Vision Pro available in the U.S. on February 2",
+      "summary": "官方公布 2024 年 2 月 2 日美国上市时间表。",
+      "checkedAt": "2026-10-27T11:51:44Z",
+      "precision": "day",
+      "verification": "已核验官方页面标题与相关正文；中文为摘要"
+    },
+    {
+      "id": "vision-world",
+      "publisher": "Apple",
+      "publishedAt": "2024-06-10",
+      "url": "https://www.apple.com/newsroom/2024/06/apple-vision-pro-arrives-in-new-countries-and-regions-beginning-june-28/",
+      "title": "Apple Vision Pro arrives in new countries and regions",
+      "summary": "官方公布 6 月 28 日开始扩展至新国家和地区的销售安排。",
+      "checkedAt": "2026-10-27T11:51:44Z",
+      "precision": "day",
+      "verification": "已核验官方页面标题与相关正文；中文为摘要"
+    },
+    {
+      "id": "ai-plan",
+      "publisher": "Apple",
+      "publishedAt": "2024-06-10",
+      "url": "https://www.apple.com/newsroom/2024/06/introducing-apple-intelligence-for-iphone-ipad-and-mac/",
+      "title": "Introducing Apple Intelligence",
+      "summary": "Apple 发布 Apple Intelligence，说明支持设备、隐私设计和初始上线安排。",
+      "checkedAt": "2026-10-27T11:51:44Z",
+      "precision": "day",
+      "verification": "已核验官方页面标题与相关正文；中文为摘要"
+    },
+    {
+      "id": "ai-live",
+      "publisher": "Apple",
+      "publishedAt": "2024-10-28",
+      "url": "https://www.apple.com/newsroom/2024/10/apple-intelligence-is-available-today-on-iphone-ipad-and-mac/",
+      "title": "Apple Intelligence is available today",
+      "summary": "官方宣布第一批 Apple Intelligence 功能随软件更新推出，仍有语言和设备限制。",
+      "checkedAt": "2026-10-27T11:51:44Z",
+      "precision": "day",
+      "verification": "已核验官方页面标题与相关正文；中文为摘要"
+    },
+    {
+      "id": "fed-sep",
+      "publisher": "Federal Reserve",
+      "publishedAt": "2024-09-18",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20240918a.htm",
+      "title": "FOMC statement — September 18, 2024",
+      "summary": "联邦基金利率目标区间下调 0.5 个百分点至 4.75%–5.00%。",
+      "checkedAt": "2026-10-27T11:51:44Z",
+      "precision": "day",
+      "verification": "已核验官方页面标题与相关正文；中文为摘要"
+    },
+    {
+      "id": "fed-nov",
+      "publisher": "Federal Reserve",
+      "publishedAt": "2024-11-07",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20241107a.htm",
+      "title": "FOMC statement — November 7, 2024",
+      "summary": "联邦基金利率目标区间下调 0.25 个百分点至 4.50%–4.75%。",
+      "checkedAt": "2026-10-27T11:51:44Z",
+      "precision": "day",
+      "verification": "已核验官方页面标题与相关正文；中文为摘要"
+    },
+    {
+      "id": "fed-dec",
+      "publisher": "Federal Reserve",
+      "publishedAt": "2024-12-18",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20241218a.htm",
+      "title": "FOMC statement — December 18, 2024",
+      "summary": "联邦基金利率目标区间下调 0.25 个百分点至 4.25%–4.50%。",
+      "checkedAt": "2026-10-27T11:51:44Z",
+      "precision": "day",
+      "verification": "已核验官方页面标题与相关正文；中文为摘要"
+    },
+    {
+      "id": "ecb-jun",
+      "publisher": "European Central Bank",
+      "publishedAt": "2024-06-06",
+      "url": "https://www.ecb.europa.eu/press/pr/date/2024/html/ecb.mp240606~2148ecdb3c.en.html",
+      "title": "Monetary policy decisions — June 6, 2024",
+      "summary": "欧洲央行下调三项关键利率 25 个基点，同时强调按数据逐次决策。",
+      "checkedAt": "2026-10-27T11:51:44Z",
+      "precision": "day",
+      "verification": "已核验官方页面标题与相关正文；中文为摘要"
+    },
+    {
+      "id": "ipad-m4",
+      "publisher": "Apple",
+      "publishedAt": "2024-05-07",
+      "url": "https://www.apple.com/newsroom/2024/05/apple-unveils-stunning-new-ipad-pro-with-m4-chip-and-apple-pencil-pro/",
+      "title": "Apple unveils new iPad Pro with M4",
+      "summary": "新 iPad Pro 搭载 M4、OLED 显示屏，并公布订购及上市安排。",
+      "checkedAt": "2026-10-27T11:51:44Z",
+      "precision": "day",
+      "verification": "已核验官方页面标题与相关正文；中文为摘要"
+    },
+    {
+      "id": "apple-q2",
+      "publisher": "Apple",
+      "publishedAt": "2024-05-02",
+      "url": "https://www.apple.com/newsroom/2024/05/apple-reports-second-quarter-results/",
+      "title": "Apple reports second quarter results",
+      "summary": "季度收入 908 亿美元，同比下降 4%；董事会新增授权 1100 亿美元股票回购。",
+      "checkedAt": "2026-10-27T11:51:44Z",
+      "precision": "day",
+      "verification": "已核验官方页面标题与相关正文；中文为摘要"
+    },
+    {
+      "id": "iphone16",
+      "publisher": "Apple",
+      "publishedAt": "2024-09-09",
+      "url": "https://www.apple.com/newsroom/2024/09/apple-introduces-iphone-16-and-iphone-16-plus/",
+      "title": "Apple introduces iPhone 16 and iPhone 16 Plus",
+      "summary": "发布搭载 A18 的 iPhone 16 系列，并公布 9 月 13 日预订及 9 月 20 日上市安排。",
+      "checkedAt": "2026-10-27T11:51:44Z",
+      "precision": "day",
+      "verification": "已核验官方页面标题与相关正文；中文为摘要"
+    },
+    {
+      "id": "apple-recent-0",
+      "publisher": "Apple Newsroom",
+      "publishedAt": "2026-10-27",
+      "url": "https://www.apple.com/newsroom/2026/10/apple-introduces-the-new-14-inch-macbook-pro-with-m6/",
+      "title": "Apple introduces the new 14-inch MacBook Pro with M6",
+      "summary": "Apple 发布 M6 版 14 英寸 MacBook Pro，计划 10 月 28 日开启预订、11 月 6 日起发售。",
+      "checkedAt": "2026-10-27T14:28:21.967Z",
+      "precision": "day",
+      "verification": "已读取官方原文正文及页面发布日期；中文为摘要。"
+    },
+    {
+      "id": "apple-recent-1",
+      "publisher": "Apple Newsroom",
+      "publishedAt": "2026-10-27",
+      "url": "https://www.apple.com/newsroom/2026/10/apple-unveils-new-imac-with-m6/",
+      "title": "Apple unveils new iMac with M6",
+      "summary": "Apple 公布 M6 版 iMac，计划 10 月 28 日预订、11 月 6 日起到货及门店销售。",
+      "checkedAt": "2026-10-27T14:28:21.967Z",
+      "precision": "day",
+      "verification": "已读取官方原文正文及页面发布日期；中文为摘要。"
+    },
+    {
+      "id": "apple-recent-3",
+      "publisher": "Apple Newsroom",
+      "publishedAt": "2026-10-26",
+      "url": "https://www.apple.com/newsroom/2026/10/siri-ai-is-available-in-more-languages-starting-today/",
+      "title": "Siri AI is available in more languages starting today",
+      "summary": "Apple 宣布随 27.2 系列系统更新，Siri AI 测试版新增法语、日语、韩语、葡萄牙语和西班牙语支持。",
+      "checkedAt": "2026-10-27T14:28:21.967Z",
+      "precision": "day",
+      "verification": "已读取官方原文正文及页面发布日期；中文为摘要。"
+    },
+    {
+      "id": "apple-recent-4",
+      "publisher": "Apple Newsroom",
+      "publishedAt": "2026-10-26",
+      "url": "https://www.apple.com/newsroom/2026/10/apple-gives-ipad-mini-its-biggest-update-ever/",
+      "title": "Apple gives iPad mini its biggest update ever",
+      "summary": "Apple 公布搭载 8.5 英寸 OLED、A20 Pro 的 iPad mini，计划 10 月 28 日预订、11 月 6 日起发售。",
+      "checkedAt": "2026-10-27T14:28:21.967Z",
+      "precision": "day",
+      "verification": "已读取官方原文正文及页面发布日期；中文为摘要。"
+    },
+    {
+      "id": "nv-recent-0",
+      "publisher": "NVIDIA",
+      "publishedAt": "2026-10-26",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-and-meta-to-expand-collaboration-on-muse-and-muse-family-of-models-amid-robust-growth",
+      "title": "NVIDIA and Meta to Expand Collaboration on Muse and Muse Family of Models Amid Robust Growth",
+      "summary": "NVIDIA 与 Meta 宣布扩大 Muse 模型合作及基础设施部署，NVIDIA 表示将向 Meta 股权发行投资 30 亿美元。",
+      "checkedAt": "2026-10-27T14:28:21.967Z",
+      "precision": "day",
+      "verification": "已读取官方原文正文及页面发布日期；中文为摘要。 RSS 日期为 10 月 27 日，归档采用正文的 10 月 26 日。"
+    },
+    {
+      "id": "nv-recent-2",
+      "publisher": "NVIDIA",
+      "publishedAt": "2026-10-22",
+      "url": "https://blogs.nvidia.com/blog/minerva-platform-infrastructure/",
+      "title": "NVIDIA Unveils Minerva to Bring End-to-End Observability for AI Factories",
+      "summary": "NVIDIA 官方博客宣布推出 Minerva，整合基础设施与工作负载遥测，IREN 被列为正在使用的伙伴。",
+      "checkedAt": "2026-10-27T14:28:21.967Z",
+      "precision": "day",
+      "verification": "已读取官方原文正文及页面发布日期；中文为摘要。"
+    },
+    {
+      "id": "nv-recent-11",
+      "publisher": "NVIDIA",
+      "publishedAt": "2026-10-21",
+      "url": "https://blogs.nvidia.com/blog/google-cloud-vera-rubin-infrastructure/",
+      "title": "Google Cloud and NVIDIA Announce General Availability of NVIDIA Vera Rubin Infrastructure",
+      "summary": "NVIDIA 官方博客介绍 Google Cloud A5X 与 Vera Rubin NVL72，正文称通用可用性将在下个月到来，并计划拓展欧洲供应。",
+      "checkedAt": "2026-10-27T14:28:21.967Z",
+      "precision": "day",
+      "verification": "已读取官方原文正文及页面发布日期；中文为摘要。"
+    },
+    {
+      "id": "nv-recent-12",
+      "publisher": "NVIDIA",
+      "publishedAt": "2026-10-21",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-and-supply-chain-partners-expand-capacity-to-accelerate-ai-infrastructure-buildout",
+      "title": "NVIDIA and Supply Chain Partners Expand Capacity to Accelerate AI Infrastructure Buildout",
+      "summary": "NVIDIA 公布与 Amkor、IBIDEN、KYEC 等伙伴的扩产安排，目标未来三年基板产能增至 2.5 倍，并向 KYEC 提供 11 亿美元产能预付款。",
+      "checkedAt": "2026-10-27T14:28:21.967Z",
+      "precision": "day",
+      "verification": "已读取官方原文正文及页面发布日期；中文为摘要。"
+    },
+    {
+      "id": "ecb-recent-0",
+      "publisher": "European Central Bank",
+      "publishedAt": "2026-10-27",
+      "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr261027~506ef03145.en.html",
+      "title": "October 2026 euro area bank lending survey",
+      "summary": "ECB 公布 10 月银行贷款调查：三季度企业信贷标准净收紧比例为 9%，企业贷款需求净下降 6%，并记录 AI 基础设施融资需求线索。",
+      "checkedAt": "2026-10-27T14:28:21.967Z",
+      "precision": "day",
+      "verification": "已读取官方原文正文及页面发布日期；中文为摘要。"
+    },
+    {
+      "id": "ecb-recent-1",
+      "publisher": "European Central Bank",
+      "publishedAt": "2026-10-26",
+      "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr261026~bde7b6d11a.en.html",
+      "title": "Survey on the Access to Finance of Enterprises: lending conditions tightened",
+      "summary": "ECB 三季度 SAFE 调查显示企业报告银行贷款利率净上升比例为 46%，贷款可得性下降；本轮首次受访者占多数。",
+      "checkedAt": "2026-10-27T14:28:21.967Z",
+      "precision": "day",
+      "verification": "已读取官方原文正文及页面发布日期；中文为摘要。"
+    },
+    {
+      "id": "ecb-recent-4",
+      "publisher": "European Central Bank",
+      "publishedAt": "2026-10-23",
+      "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr261023~a3d201c97c.en.html",
+      "title": "ECB Consumer Expectations Survey results – September 2026",
+      "summary": "ECB 发布 9 月消费者预期调查：未来 12 个月通胀预期中位数由 3.0% 升至 3.1%，三年与五年预期分别维持 2.9% 和 2.5%。",
+      "checkedAt": "2026-10-27T14:28:21.967Z",
+      "precision": "day",
+      "verification": "已读取官方原文正文及页面发布日期；中文为摘要。"
+    },
+    {
+      "id": "ecb-recent-14",
+      "publisher": "European Central Bank",
+      "publishedAt": "2026-10-07",
+      "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr261007~6447350434.en.html",
+      "title": "Results of the September 2026 survey on credit terms and conditions in euro-denominated securities financing and OTC derivatives markets (SESFOD)",
+      "summary": "ECB 公布 9 月 SESFOD 调查，覆盖 6–8 月：总体信贷条件略有放松，多类抵押品融资需求增加，部分衍生品估值争议增加。",
+      "checkedAt": "2026-10-27T14:28:21.967Z",
+      "precision": "day",
+      "verification": "已读取官方原文正文及页面发布日期；中文为摘要。"
+    },
+    {
+      "id": "fed-recent-2",
+      "publisher": "Federal Reserve Board",
+      "publishedAt": "2026-10-09",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/other20261009a.htm",
+      "title": "Federal Reserve Board releases results of the 2025 Survey of Consumer Finances, which provides the public and policymakers with detailed insights into the economic condition of American families",
+      "summary": "美联储发布 2025 年 SCF：2022–2025 年实际家庭净资产中位数增长 2% 至 215,900 美元，持股家庭占比由 58% 降至 56%。",
+      "checkedAt": "2026-10-27T14:28:21.967Z",
+      "precision": "day",
+      "verification": "已读取官方原文正文及页面发布日期；中文为摘要。"
+    },
+    {
+      "id": "fed-recent-3",
+      "publisher": "Federal Reserve Board",
+      "publishedAt": "2026-10-08",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261008a.htm",
+      "title": "Federal Reserve Board announces enforcement action against American Express Company to address, among other things, the firm’s failure to sufficiently detect and report certain suspicious activity related to money laundering",
+      "summary": "美联储宣布针对 American Express 的执法行动，指出其反洗钱可疑活动识别报告及集团 AML 项目实施存在不足。",
+      "checkedAt": "2026-10-27T14:28:21.967Z",
+      "precision": "day",
+      "verification": "已读取官方原文正文及页面发布日期；中文为摘要。"
+    },
+    {
+      "id": "fed-recent-9",
+      "publisher": "Federal Reserve Board",
+      "publishedAt": "2026-09-30",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260930a.htm",
+      "title": "Federal Reserve Board finalizes changes to enhance the transparency and public accountability of its stress test and reduce volatility in its stress test-related capital requirements",
+      "summary": "美联储敲定两项压力测试规则：年度征求情景及重大模型调整意见，并计划从 2028 年起对符合条件银行采用最近两次压力测试平均结果计算资本缓冲。",
+      "checkedAt": "2026-10-27T14:28:21.967Z",
+      "precision": "day",
+      "verification": "已读取官方原文正文及页面发布日期；中文为摘要。"
+    },
+    {
+      "id": "fed-recent-12",
+      "publisher": "Federal Reserve Board",
+      "publishedAt": "2026-09-24",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260924a.htm",
+      "title": "Federal Reserve Board requests public comment on two proposals related to establishing a regulatory framework for Board-supervised payment stablecoin issuers under the GENIUS Act",
+      "summary": "美联储就 GENIUS Act 下两项支付稳定币提案征求意见，涉及储备资产、资本与风险管理标准及银行申请发行的流程。",
+      "checkedAt": "2026-10-27T14:28:21.967Z",
+      "precision": "day",
+      "verification": "已读取官方原文正文及页面发布日期；中文为摘要。"
+    }
+  ],
+  "events": [
+    {
+      "id": "nvidia-arm",
+      "title": "NVIDIA 收购 Arm：从签约到终止",
+      "category": "并购与监管",
+      "tags": [
+        "NVIDIA",
+        "英伟达",
+        "NVDA",
+        "Arm",
+        "软银",
+        "收购"
+      ],
+      "assets": [
+        {
+          "name": "NVIDIA",
+          "ticker": "NVDA",
+          "relation": "拟议收购方"
+        },
+        {
+          "name": "SoftBank Group",
+          "ticker": "9984.T",
+          "relation": "交易出售方"
+        }
+      ],
+      "impact": "监管审批会改变交易完成概率及整合预期。交易终止不代表芯片业务消失，需分别评估交易与经营。",
+      "analysis": "原先的收购协议不能继续支持“收购会完成”的判断。后续终止声明使该计划失效，同时保留最初公告以解释结论变化。",
+      "versions": [
+        {
+          "date": "2020-09-13",
+          "state": "planned",
+          "summary": "NVIDIA 宣布拟以约 400 亿美元收购 Arm；交易尚需监管批准。",
+          "sourceIds": [
+            "arm-plan"
+          ],
+          "fact": "双方已宣布拟议交易。",
+          "unknown": "监管批准和交割结果未知。",
+          "watch": "监管意见与双方交割公告。"
+        },
+        {
+          "date": "2022-02-07",
+          "state": "terminated",
+          "summary": "NVIDIA 与 SoftBank 因重大监管挑战终止 Arm 收购，原收购计划不再成立。",
+          "sourceIds": [
+            "arm-end"
+          ],
+          "fact": "双方正式宣布终止交易。",
+          "unknown": "不能据此推断双方未来所有合作终止。",
+          "watch": "将终止信息与最初收购承诺同时阅读。"
+        }
+      ]
+    },
+    {
+      "id": "vision-pro",
+      "title": "Vision Pro：发布到美国上市安排",
+      "category": "消费科技",
+      "tags": [
+        "Apple",
+        "苹果",
+        "AAPL",
+        "Vision Pro",
+        "空间计算"
+      ],
+      "assets": [
+        {
+          "name": "Apple",
+          "ticker": "AAPL",
+          "relation": "产品发布主体"
+        }
+      ],
+      "impact": "新产品可能扩展生态收入，但上市时间不等于销量、毛利或供应链订单。",
+      "analysis": "发布和确定上市时间是两个版本。最初的“明年上市”应被更明确的美国日期更新，而非当作相互矛盾的两件事。",
+      "versions": [
+        {
+          "date": "2023-06-05",
+          "state": "planned",
+          "summary": "Apple 首次发布 Vision Pro，并规划次年在美国率先销售。",
+          "sourceIds": [
+            "vision-plan"
+          ],
+          "fact": "产品已发布。",
+          "unknown": "实际销售规模及具体上市日尚未披露。",
+          "watch": "官方上市日期与市场范围。"
+        },
+        {
+          "date": "2024-01-08",
+          "state": "confirmed",
+          "summary": "Apple 公布 Vision Pro 于 2024 年 2 月 2 日在美国上市的安排。",
+          "sourceIds": [
+            "vision-us"
+          ],
+          "fact": "美国上市日程已由官方披露。",
+          "unknown": "这份公告没有提供真实销量。",
+          "watch": "后续地区扩展和财报披露。"
+        }
+      ]
+    },
+    {
+      "id": "apple-intelligence",
+      "title": "Apple Intelligence：发布与首批上线",
+      "category": "AI 应用",
+      "tags": [
+        "Apple",
+        "苹果",
+        "AAPL",
+        "AI",
+        "人工智能",
+        "Apple Intelligence"
+      ],
+      "assets": [
+        {
+          "name": "Apple",
+          "ticker": "AAPL",
+          "relation": "AI 系统发布主体"
+        }
+      ],
+      "impact": "AI 功能可能影响用户体验与换机动机；该影响路径是产品分析，不是已发生的收入增量。",
+      "analysis": "“系统发布”和“首批功能可用”应属于同一事件的两个阶段。不能把首批上线理解为全部功能、全部地区和全部设备均已可用。",
+      "versions": [
+        {
+          "date": "2024-06-10",
+          "state": "planned",
+          "summary": "Apple 发布 Apple Intelligence，介绍设备、隐私架构及初始功能安排。",
+          "sourceIds": [
+            "ai-plan"
+          ],
+          "fact": "系统和能力规划已公布。",
+          "unknown": "全部功能的可用范围仍待后续更新。",
+          "watch": "设备、语言和地区限制。"
+        },
+        {
+          "date": "2024-10-28",
+          "state": "confirmed",
+          "summary": "首批 Apple Intelligence 功能随软件更新推出，可用性仍受设备和语言限制。",
+          "sourceIds": [
+            "ai-live"
+          ],
+          "fact": "首批功能上线获官方确认。",
+          "unknown": "用户采用率、收入影响未由本公告证明。",
+          "watch": "后续功能和语言覆盖。"
+        }
+      ]
+    },
+    {
+      "id": "nv-split",
+      "title": "NVIDIA 股票 10 拆 1：计划与完成",
+      "category": "资本运作",
+      "tags": [
+        "NVIDIA",
+        "英伟达",
+        "NVDA",
+        "拆股",
+        "股票拆分"
+      ],
+      "assets": [
+        {
+          "name": "NVIDIA",
+          "ticker": "NVDA",
+          "relation": "股票拆分主体"
+        }
+      ],
+      "impact": "拆股会改变每股价格与股数的表示口径，不会仅凭拆股创造同等比例的企业价值。",
+      "analysis": "同一份财报中的“收入增长”和“拆股”是两个不同动作，应分别归档；后续财报确认拆股完成后，计划状态升级。",
+      "versions": [
+        {
+          "date": "2024-05-22",
+          "state": "planned",
+          "summary": "NVIDIA 宣布 10 拆 1，计划 6 月 7 日分配新增股份、6 月 10 日按拆分后口径交易。",
+          "sourceIds": [
+            "nv-q1"
+          ],
+          "fact": "董事会宣布拆股安排。",
+          "unknown": "计划是否完成需后续材料确认。",
+          "watch": "完成公告及价格复权口径。"
+        },
+        {
+          "date": "2024-08-28",
+          "state": "confirmed",
+          "summary": "第二财季财报回溯确认公司已于 2024 年 6 月 7 日完成 10 拆 1。",
+          "sourceIds": [
+            "nv-q2"
+          ],
+          "fact": "后续财报确认拆股已完成。",
+          "unknown": "拆股本身无法证明未来回报。",
+          "watch": "比较历史数据时使用一致复权口径。"
+        }
+      ]
+    },
+    {
+      "id": "fed-cycle",
+      "title": "美联储 2024：三次降息的证据链",
+      "category": "宏观政策",
+      "tags": [
+        "Fed",
+        "美联储",
+        "宏观",
+        "降息",
+        "利率",
+        "美元",
+        "黄金"
+      ],
+      "assets": [
+        {
+          "name": "美元指数",
+          "ticker": "DXY",
+          "relation": "利率差影响路径"
+        },
+        {
+          "name": "美国国债",
+          "ticker": "US Treasuries",
+          "relation": "收益率影响路径"
+        },
+        {
+          "name": "黄金",
+          "ticker": "Gold",
+          "relation": "实际利率影响路径"
+        }
+      ],
+      "impact": "利率决策可能通过贴现率、美元及实际利率影响多类资产；影响方向依赖增长和通胀背景。",
+      "analysis": "政策事实与下一次会议预测分开。各次决议是同一降息周期的更新，不能把已经发生的降息当作对未来路径的承诺。",
+      "versions": [
+        {
+          "date": "2024-09-18",
+          "state": "confirmed",
+          "summary": "FOMC 将目标区间下调 50 个基点至 4.75%–5.00%。",
+          "sourceIds": [
+            "fed-sep"
+          ],
+          "fact": "本次降息幅度和目标区间已披露。",
+          "unknown": "后续会议幅度尚未确定。",
+          "watch": "后续 FOMC 决议和经济数据。"
+        },
+        {
+          "date": "2024-11-07",
+          "state": "confirmed",
+          "summary": "FOMC 再下调 25 个基点，目标区间更新至 4.50%–4.75%。",
+          "sourceIds": [
+            "fed-nov"
+          ],
+          "fact": "本次目标区间已更新。",
+          "unknown": "不代表自动连续降息。",
+          "watch": "通胀、就业与委员会后续声明。"
+        },
+        {
+          "date": "2024-12-18",
+          "state": "confirmed",
+          "summary": "FOMC 下调 25 个基点至 4.25%–4.50%，本库已归档三次决议。",
+          "sourceIds": [
+            "fed-dec"
+          ],
+          "fact": "三份决议显示该阶段的利率变化。",
+          "unknown": "本库未覆盖此后全部利率决议。",
+          "watch": "使用当前决议前另行核验最新材料。"
+        }
+      ]
+    },
+    {
+      "id": "ecb-cut",
+      "title": "欧洲央行 2024 年 6 月降息",
+      "category": "宏观政策",
+      "tags": [
+        "ECB",
+        "欧洲央行",
+        "宏观",
+        "利率",
+        "欧元"
+      ],
+      "assets": [
+        {
+          "name": "欧元",
+          "ticker": "EUR",
+          "relation": "利率差影响路径"
+        },
+        {
+          "name": "欧元区国债",
+          "ticker": "Eurozone Bonds",
+          "relation": "利率影响路径"
+        }
+      ],
+      "impact": "降息改变欧元区融资条件；欧元和债券反应还取决于市场预期与其他央行政策。",
+      "analysis": "本次降息可确认，但公告采用逐次会议、依赖数据的表述，不能外推为固定降息路径。",
+      "versions": [
+        {
+          "date": "2024-06-06",
+          "state": "confirmed",
+          "summary": "欧洲央行下调三项关键利率 25 个基点，并强调逐次会议、依赖数据决策。",
+          "sourceIds": [
+            "ecb-jun"
+          ],
+          "fact": "本次 25 个基点降息已宣布。",
+          "unknown": "后续降息频率没有在本公告中锁定。",
+          "watch": "后续议息声明与通胀数据。"
+        }
+      ]
+    },
+    {
+      "id": "nv-q2-results",
+      "title": "NVIDIA FY2025 Q2：收入约 300 亿美元",
+      "category": "财报业绩",
+      "tags": [
+        "NVIDIA",
+        "英伟达",
+        "NVDA",
+        "财报",
+        "AI",
+        "数据中心"
+      ],
+      "assets": [
+        {
+          "name": "NVIDIA",
+          "ticker": "NVDA",
+          "relation": "财报发布主体"
+        }
+      ],
+      "impact": "数据中心业务增长可改变盈利预期；已公布的季度收入与未来收入指引必须分别理解。",
+      "analysis": "收入属于已实现的报告期数据。季度同比增长不等同于未来增长承诺，财务年度与自然年也应区分。",
+      "versions": [
+        {
+          "date": "2024-08-28",
+          "state": "confirmed",
+          "summary": "NVIDIA 披露 FY2025 第二财季收入约 300 亿美元，同比增长 122%；报告期结束于 2024 年 7 月 28 日。",
+          "sourceIds": [
+            "nv-q2"
+          ],
+          "fact": "财报披露收入及报告期。",
+          "unknown": "未来季度经营结果未由本期数据证明。",
+          "watch": "后续财报与指引兑现。"
+        }
+      ]
+    },
+    {
+      "id": "nv-blackwell",
+      "title": "Blackwell：官方披露样品交付",
+      "category": "AI 算力",
+      "tags": [
+        "NVIDIA",
+        "英伟达",
+        "NVDA",
+        "Blackwell",
+        "GPU",
+        "AI"
+      ],
+      "assets": [
+        {
+          "name": "NVIDIA",
+          "ticker": "NVDA",
+          "relation": "产品与样品交付主体"
+        }
+      ],
+      "impact": "样品交付属于产品验证链路，可能影响客户评估；它不等于全面量产或全部收入确认。",
+      "analysis": "只采用财报中的样品交付表述，不把它升级为大规模交付结论。产品阶段、订单、出货和收入是不同层级。",
+      "versions": [
+        {
+          "date": "2024-08-28",
+          "state": "confirmed",
+          "summary": "NVIDIA 在第二财季业绩公告中表示 Blackwell 样品正在向合作伙伴与客户交付。",
+          "sourceIds": [
+            "nv-q2"
+          ],
+          "fact": "官方披露样品交付。",
+          "unknown": "无法由此证明量产规模或客户收入。",
+          "watch": "后续交付、量产和财报口径。"
+        }
+      ]
+    },
+    {
+      "id": "ipad-m4",
+      "title": "M4 首发 iPad Pro：终端 AI 计算",
+      "category": "消费科技",
+      "tags": [
+        "Apple",
+        "苹果",
+        "AAPL",
+        "M4",
+        "iPad",
+        "AI"
+      ],
+      "assets": [
+        {
+          "name": "Apple",
+          "ticker": "AAPL",
+          "relation": "芯片与终端发布主体"
+        }
+      ],
+      "impact": "新芯片和新设备可能影响高端终端更新周期；具体销量与利润需要后续财务披露验证。",
+      "analysis": "官方产品参数支持技术发布事实，不能据此确认供应链订单或消费者换机规模。",
+      "versions": [
+        {
+          "date": "2024-05-07",
+          "state": "confirmed",
+          "summary": "Apple 发布搭载 M4 的新 iPad Pro，采用 OLED 显示屏，并公布上市安排。",
+          "sourceIds": [
+            "ipad-m4"
+          ],
+          "fact": "M4 芯片进入新 iPad Pro 产品。",
+          "unknown": "实际销量、成本与利润尚未由该公告验证。",
+          "watch": "后续销售及财报披露。"
+        }
+      ]
+    },
+    {
+      "id": "apple-buyback",
+      "title": "Apple 新增 1100 亿美元回购授权",
+      "category": "资本运作",
+      "tags": [
+        "Apple",
+        "苹果",
+        "AAPL",
+        "回购",
+        "股东回报",
+        "公告"
+      ],
+      "assets": [
+        {
+          "name": "Apple",
+          "ticker": "AAPL",
+          "relation": "回购授权主体"
+        }
+      ],
+      "impact": "回购授权可能影响资本分配预期；授权额度与实际回购执行是不同概念。",
+      "analysis": "授权是董事会决策，不是已经按全额完成的现金支出。与同日收入数据分开建事件，避免同一公告中的不同动作被误合并。",
+      "versions": [
+        {
+          "date": "2024-05-02",
+          "state": "confirmed",
+          "summary": "Apple 董事会新增授权 1100 亿美元股票回购。该数值是授权额，并非公告日的已执行金额。",
+          "sourceIds": [
+            "apple-q2"
+          ],
+          "fact": "董事会已批准新增回购授权。",
+          "unknown": "实际回购节奏和金额仍需后续披露。",
+          "watch": "现金流量表及后续股东回报披露。"
+        }
+      ]
+    },
+    {
+      "id": "apple-q2-results",
+      "title": "Apple FY2024 Q2：收入 908 亿美元",
+      "category": "财报业绩",
+      "tags": [
+        "Apple",
+        "苹果",
+        "AAPL",
+        "财报",
+        "服务业务"
+      ],
+      "assets": [
+        {
+          "name": "Apple",
+          "ticker": "AAPL",
+          "relation": "财报发布主体"
+        }
+      ],
+      "impact": "总收入和服务业务结构共同影响盈利分析，不能用单个指标解释全部股价变化。",
+      "analysis": "本事件跟踪经营业绩；同日新增回购授权归档为另一事件。共享同一文档不会让它们成为同一动作。",
+      "versions": [
+        {
+          "date": "2024-05-02",
+          "state": "confirmed",
+          "summary": "Apple 披露截至 2024 年 3 月 30 日的第二财季收入 908 亿美元，同比下降 4%。",
+          "sourceIds": [
+            "apple-q2"
+          ],
+          "fact": "收入和报告期可由财报核对。",
+          "unknown": "未来季度收入与股价方向未被证明。",
+          "watch": "后续季度业务结构和盈利披露。"
+        }
+      ]
+    },
+    {
+      "id": "iphone16",
+      "title": "iPhone 16：A18 与上市日程公布",
+      "category": "消费科技",
+      "tags": [
+        "Apple",
+        "苹果",
+        "AAPL",
+        "iPhone 16",
+        "A18"
+      ],
+      "assets": [
+        {
+          "name": "Apple",
+          "ticker": "AAPL",
+          "relation": "产品发布主体"
+        }
+      ],
+      "impact": "设备规格与发售安排可能影响换机预期，消费者需求仍需实际销售和财报数据观察。",
+      "analysis": "产品发布、预订和正式销售三个日期应分开。公告中的日期安排不等同于已经实现的销量。",
+      "versions": [
+        {
+          "date": "2024-09-09",
+          "state": "confirmed",
+          "summary": "Apple 发布 iPhone 16 和 iPhone 16 Plus：搭载 A18，9 月 13 日开启预订，9 月 20 日上市。",
+          "sourceIds": [
+            "iphone16"
+          ],
+          "fact": "产品与预订、上市日期已由官方公布。",
+          "unknown": "真实需求与销量未由发布公告证明。",
+          "watch": "后续销售及相关收入披露。"
+        }
+      ]
+    },
+    {
+      "id": "vision-global",
+      "title": "Vision Pro：扩展至中国等新市场",
+      "category": "消费科技",
+      "tags": [
+        "Apple",
+        "苹果",
+        "AAPL",
+        "Vision Pro",
+        "中国",
+        "区域扩展"
+      ],
+      "assets": [
+        {
+          "name": "Apple",
+          "ticker": "AAPL",
+          "relation": "地区扩展主体"
+        }
+      ],
+      "impact": "地区扩展增加可服务市场，但各地区销量、内容生态和定价效应需要独立验证。",
+      "analysis": "地区扩展与最初美国上市的地区和动作不同，通过产品标签关联而不强制合并为同一次上市事件。",
+      "versions": [
+        {
+          "date": "2024-06-10",
+          "state": "confirmed",
+          "summary": "Apple 宣布 Vision Pro 自 2024 年 6 月 28 日起陆续进入新的国家和地区。",
+          "sourceIds": [
+            "vision-world"
+          ],
+          "fact": "新的销售地区与日期安排已披露。",
+          "unknown": "各地区销量与盈利贡献尚未披露。",
+          "watch": "分地区的官方可用性与后续经营数据。"
+        }
+      ]
+    },
+    {
+      "id": "nv-q1-results",
+      "title": "NVIDIA FY2025 Q1：收入约 260 亿美元",
+      "category": "财报业绩",
+      "tags": [
+        "NVIDIA",
+        "英伟达",
+        "NVDA",
+        "财报",
+        "数据中心"
+      ],
+      "assets": [
+        {
+          "name": "NVIDIA",
+          "ticker": "NVDA",
+          "relation": "财报发布主体"
+        }
+      ],
+      "impact": "收入增长是报告期经营事实，未来盈利影响需结合毛利、成本和后续指引。",
+      "analysis": "同一公司不同报告期独立归档，通过公司标签连接；不把 Q1 和 Q2 数字互相覆盖。",
+      "versions": [
+        {
+          "date": "2024-05-22",
+          "state": "confirmed",
+          "summary": "NVIDIA 披露 FY2025 第一财季收入约 260 亿美元，同比增长 262%。",
+          "sourceIds": [
+            "nv-q1"
+          ],
+          "fact": "当期收入和同比增幅由官方财报披露。",
+          "unknown": "未来季度业绩尚未由当期数字证明。",
+          "watch": "后续财报、毛利与数据中心需求。"
+        }
+      ]
+    },
+    {
+      "id": "apple-m6-macbook",
+      "title": "Apple 发布 M6 版 14 英寸 MacBook Pro",
+      "category": "消费科技",
+      "tags": [
+        "MacBook",
+        "Pro",
+        "M6",
+        "端侧AI"
+      ],
+      "assets": [
+        {
+          "name": "Apple",
+          "ticker": "AAPL",
+          "relation": "公告主体或明确合作方；不代表收益承诺"
+        }
+      ],
+      "impact": "端侧 AI 与连接能力升级可作为换机需求的观察线索，不等于销量或股价增长。",
+      "analysis": "端侧 AI 与连接能力升级可作为换机需求的观察线索，不等于销量或股价增长。",
+      "versions": [
+        {
+          "date": "2026-10-27",
+          "state": "planned",
+          "summary": "Apple 发布 M6 版 14 英寸 MacBook Pro，计划 10 月 28 日开启预订、11 月 6 日起发售。",
+          "sourceIds": [
+            "apple-recent-0"
+          ],
+          "fact": "Apple 发布 M6 版 14 英寸 MacBook Pro，计划 10 月 28 日开启预订、11 月 6 日起发售。",
+          "unknown": "该公告确认产品与上市安排；尚不能认定已发货或已产生新增销售收入。",
+          "watch": "实际上市、渠道供应及后续 Mac 业务财报",
+          "capturedAt": "2026-10-27T14:28:21.967Z"
+        }
+      ]
+    },
+    {
+      "id": "apple-m6-imac",
+      "title": "Apple 发布 M6 版 iMac",
+      "category": "消费科技",
+      "tags": [
+        "iMac",
+        "M6",
+        "桌面电脑"
+      ],
+      "assets": [
+        {
+          "name": "Apple",
+          "ticker": "AAPL",
+          "relation": "公告主体或明确合作方；不代表收益承诺"
+        }
+      ],
+      "impact": "桌面端产品更新补充 Mac 产品线；应与笔记本更新分别观察，不能据此推算总收入。",
+      "analysis": "桌面端产品更新补充 Mac 产品线；应与笔记本更新分别观察，不能据此推算总收入。",
+      "versions": [
+        {
+          "date": "2026-10-27",
+          "state": "planned",
+          "summary": "Apple 公布 M6 版 iMac，计划 10 月 28 日预订、11 月 6 日起到货及门店销售。",
+          "sourceIds": [
+            "apple-recent-1"
+          ],
+          "fact": "Apple 公布 M6 版 iMac，计划 10 月 28 日预订、11 月 6 日起到货及门店销售。",
+          "unknown": "官方产品性能描述不等于独立评测结论，也未披露实际订单量。",
+          "watch": "发售进度、独立评测和 Mac 分部收入",
+          "capturedAt": "2026-10-27T14:28:21.967Z"
+        }
+      ]
+    },
+    {
+      "id": "apple-siri-languages",
+      "title": "Siri AI 扩展五种语言的测试版支持",
+      "category": "AI 应用",
+      "tags": [
+        "Siri",
+        "AI",
+        "多语言",
+        "Apple",
+        "Intelligence"
+      ],
+      "assets": [
+        {
+          "name": "Apple",
+          "ticker": "AAPL",
+          "relation": "公告主体或明确合作方；不代表收益承诺"
+        }
+      ],
+      "impact": "语言扩展扩大潜在可用人群，但实际活跃、留存、付费及地区覆盖仍需另行验证。",
+      "analysis": "语言扩展扩大潜在可用人群，但实际活跃、留存、付费及地区覆盖仍需另行验证。",
+      "versions": [
+        {
+          "date": "2026-10-26",
+          "state": "confirmed",
+          "summary": "Apple 宣布随 27.2 系列系统更新，Siri AI 测试版新增法语、日语、韩语、葡萄牙语和西班牙语支持。",
+          "sourceIds": [
+            "apple-recent-3"
+          ],
+          "fact": "Apple 宣布随 27.2 系列系统更新，Siri AI 测试版新增法语、日语、韩语、葡萄牙语和西班牙语支持。",
+          "unknown": "需兼容设备与受支持语言；官方明确 EU 的 iOS、iPadOS、watchOS 暂不可用，不能表述为全球全量上线。",
+          "watch": "语言和地区可用性更新、功能限制及商业化条款",
+          "capturedAt": "2026-10-27T14:28:21.967Z"
+        }
+      ]
+    },
+    {
+      "id": "apple-ipad-mini-oled",
+      "title": "Apple 发布 OLED 屏幕与 A20 Pro 版 iPad mini",
+      "category": "消费科技",
+      "tags": [
+        "iPad",
+        "mini",
+        "OLED",
+        "A20",
+        "Pro"
+      ],
+      "assets": [
+        {
+          "name": "Apple",
+          "ticker": "AAPL",
+          "relation": "公告主体或明确合作方；不代表收益承诺"
+        }
+      ],
+      "impact": "小尺寸平板升级可观察产品定位与换机需求；不把配置升级直接归因到任何未披露供应商。",
+      "analysis": "小尺寸平板升级可观察产品定位与换机需求；不把配置升级直接归因到任何未披露供应商。",
+      "versions": [
+        {
+          "date": "2026-10-26",
+          "state": "planned",
+          "summary": "Apple 公布搭载 8.5 英寸 OLED、A20 Pro 的 iPad mini，计划 10 月 28 日预订、11 月 6 日起发售。",
+          "sourceIds": [
+            "apple-recent-4"
+          ],
+          "fact": "Apple 公布搭载 8.5 英寸 OLED、A20 Pro 的 iPad mini，计划 10 月 28 日预订、11 月 6 日起发售。",
+          "unknown": "发布与计划上市已确认，当前材料不证明实际交付量，也不识别具体屏幕供应商收入。",
+          "watch": "发售、渠道需求及 iPad 财报披露",
+          "capturedAt": "2026-10-27T14:28:21.967Z"
+        }
+      ]
+    },
+    {
+      "id": "nv-meta-muse",
+      "title": "NVIDIA 与 Meta 扩展 Muse 合作并计划股权投资",
+      "category": "AI 算力",
+      "tags": [
+        "NVIDIA",
+        "Meta",
+        "Muse",
+        "Vera",
+        "Rubin"
+      ],
+      "assets": [
+        {
+          "name": "NVIDIA / Meta",
+          "ticker": "NVDA / META",
+          "relation": "公告主体或明确合作方；不代表收益承诺"
+        }
+      ],
+      "impact": "模型合作、算力采购与股权投资是不同环节，观察协同落地而非把投资额当作 NVIDIA 收入。",
+      "analysis": "模型合作、算力采购与股权投资是不同环节，观察协同落地而非把投资额当作 NVIDIA 收入。",
+      "versions": [
+        {
+          "date": "2026-10-26",
+          "state": "planned",
+          "summary": "NVIDIA 与 Meta 宣布扩大 Muse 模型合作及基础设施部署，NVIDIA 表示将向 Meta 股权发行投资 30 亿美元。",
+          "sourceIds": [
+            "nv-recent-0"
+          ],
+          "fact": "NVIDIA 与 Meta 宣布扩大 Muse 模型合作及基础设施部署，NVIDIA 表示将向 Meta 股权发行投资 30 亿美元。",
+          "unknown": "原文将投资列为拟议投资并提示完成条件；未提供交割证明，合作意向不等于全部算力已部署。",
+          "watch": "投资完成公告、Meta 基础设施部署与双方财报",
+          "capturedAt": "2026-10-27T14:28:21.967Z"
+        }
+      ]
+    },
+    {
+      "id": "nv-minerva",
+      "title": "NVIDIA 推出 AI 工厂可观测平台 Minerva",
+      "category": "AI 应用",
+      "tags": [
+        "NVIDIA",
+        "Minerva",
+        "AIOps",
+        "AI工厂"
+      ],
+      "assets": [
+        {
+          "name": "NVIDIA",
+          "ticker": "NVDA",
+          "relation": "公告主体或明确合作方；不代表收益承诺"
+        }
+      ],
+      "impact": "算力运维与故障定位是基础设施软件的应用场景，商业规模和实际改善仍需客户数据验证。",
+      "analysis": "算力运维与故障定位是基础设施软件的应用场景，商业规模和实际改善仍需客户数据验证。",
+      "versions": [
+        {
+          "date": "2026-10-22",
+          "state": "confirmed",
+          "summary": "NVIDIA 官方博客宣布推出 Minerva，整合基础设施与工作负载遥测，IREN 被列为正在使用的伙伴。",
+          "sourceIds": [
+            "nv-recent-2"
+          ],
+          "fact": "NVIDIA 官方博客宣布推出 Minerva，整合基础设施与工作负载遥测，IREN 被列为正在使用的伙伴。",
+          "unknown": "其他伙伴包含计划部署者；平台宣传中的效率改善不能作为所有客户已实现的量化收益。",
+          "watch": "客户部署披露、产品供应方式与可核验运维效果",
+          "capturedAt": "2026-10-27T14:28:21.967Z"
+        }
+      ]
+    },
+    {
+      "id": "google-rubin-a5x",
+      "title": "Google Cloud 公布 Vera Rubin A5X 实例供应计划",
+      "category": "AI 算力",
+      "tags": [
+        "Google",
+        "Cloud",
+        "A5X",
+        "Vera",
+        "Rubin"
+      ],
+      "assets": [
+        {
+          "name": "Alphabet / NVIDIA",
+          "ticker": "GOOGL / NVDA",
+          "relation": "公告主体或明确合作方；不代表收益承诺"
+        }
+      ],
+      "impact": "云端新算力供给值得关注，提前访问、规划 GPU 数量和实际商用容量应分开记录。",
+      "analysis": "云端新算力供给值得关注，提前访问、规划 GPU 数量和实际商用容量应分开记录。",
+      "versions": [
+        {
+          "date": "2026-10-21",
+          "state": "planned",
+          "summary": "NVIDIA 官方博客介绍 Google Cloud A5X 与 Vera Rubin NVL72，正文称通用可用性将在下个月到来，并计划拓展欧洲供应。",
+          "sourceIds": [
+            "nv-recent-11"
+          ],
+          "fact": "NVIDIA 官方博客介绍 Google Cloud A5X 与 Vera Rubin NVL72，正文称通用可用性将在下个月到来，并计划拓展欧洲供应。",
+          "unknown": "标题提及 General Availability，但正文明确为下月计划；不能据标题认定 10 月 21 日已经普遍可用。",
+          "watch": "Google Cloud 正式可用公告、地区与配额文档",
+          "capturedAt": "2026-10-27T14:28:21.967Z"
+        }
+      ]
+    },
+    {
+      "id": "nv-supply-capacity",
+      "title": "NVIDIA 与供应链伙伴公布扩产计划",
+      "category": "AI 算力",
+      "tags": [
+        "NVIDIA",
+        "封装",
+        "基板",
+        "测试",
+        "光引擎"
+      ],
+      "assets": [
+        {
+          "name": "NVIDIA",
+          "ticker": "NVDA",
+          "relation": "公告主体或明确合作方；不代表收益承诺"
+        }
+      ],
+      "impact": "从封装、测试到光引擎观察瓶颈缓解，但需求、建设进度和产能兑现均有不确定性。",
+      "analysis": "从封装、测试到光引擎观察瓶颈缓解，但需求、建设进度和产能兑现均有不确定性。",
+      "versions": [
+        {
+          "date": "2026-10-21",
+          "state": "planned",
+          "summary": "NVIDIA 公布与 Amkor、IBIDEN、KYEC 等伙伴的扩产安排，目标未来三年基板产能增至 2.5 倍，并向 KYEC 提供 11 亿美元产能预付款。",
+          "sourceIds": [
+            "nv-recent-12"
+          ],
+          "fact": "NVIDIA 公布与 Amkor、IBIDEN、KYEC 等伙伴的扩产安排，目标未来三年基板产能增至 2.5 倍，并向 KYEC 提供 11 亿美元产能预付款。",
+          "unknown": "2.5 倍为未来目标，2027–2028 年的投产安排不是当前已建成产能；预付款也不等于当期收入。",
+          "watch": "各供应商资本开支、工厂投产及 NVIDIA 供应承诺",
+          "capturedAt": "2026-10-27T14:28:21.967Z"
+        }
+      ]
+    },
+    {
+      "id": "ecb-bls-oct26",
+      "title": "ECB 10 月银行贷款调查：企业信贷标准继续收紧",
+      "category": "宏观政策",
+      "tags": [
+        "ECB",
+        "BLS",
+        "银行贷款",
+        "AI基础设施"
+      ],
+      "assets": [
+        {
+          "name": "欧元区信贷市场",
+          "ticker": "EUR",
+          "relation": "宏观或行业观察对象，不代表具体证券收益"
+        }
+      ],
+      "impact": "供需两端信贷变化有助于观察融资环境；部分银行预期的 AI 贷款需求不代表已经放款。",
+      "analysis": "供需两端信贷变化有助于观察融资环境；部分银行预期的 AI 贷款需求不代表已经放款。",
+      "versions": [
+        {
+          "date": "2026-10-27",
+          "state": "confirmed",
+          "summary": "ECB 公布 10 月银行贷款调查：三季度企业信贷标准净收紧比例为 9%，企业贷款需求净下降 6%，并记录 AI 基础设施融资需求线索。",
+          "sourceIds": [
+            "ecb-recent-0"
+          ],
+          "fact": "ECB 公布 10 月银行贷款调查：三季度企业信贷标准净收紧比例为 9%，企业贷款需求净下降 6%，并记录 AI 基础设施融资需求线索。",
+          "unknown": "净比例为回答收紧与放松的银行占比之差，不是贷款利率或贷款余额增长率；调查不等于政策利率决议。",
+          "watch": "下一轮贷款调查、实际信贷统计与 ECB 政策决议",
+          "capturedAt": "2026-10-27T14:28:21.967Z"
+        }
+      ]
+    },
+    {
+      "id": "ecb-safe-q326",
+      "title": "ECB 企业融资调查：贷款条件收紧且样本结构变化",
+      "category": "宏观政策",
+      "tags": [
+        "ECB",
+        "SAFE",
+        "企业融资",
+        "中小企业"
+      ],
+      "assets": [
+        {
+          "name": "欧元区企业融资",
+          "ticker": "EUR",
+          "relation": "宏观或行业观察对象，不代表具体证券收益"
+        }
+      ],
+      "impact": "可与银行端 BLS 交叉观察融资约束，但两种调查样本不同，不能视为独立验证同一笔贷款。",
+      "analysis": "可与银行端 BLS 交叉观察融资约束，但两种调查样本不同，不能视为独立验证同一笔贷款。",
+      "versions": [
+        {
+          "date": "2026-10-26",
+          "state": "confirmed",
+          "summary": "ECB 三季度 SAFE 调查显示企业报告银行贷款利率净上升比例为 46%，贷款可得性下降；本轮首次受访者占多数。",
+          "sourceIds": [
+            "ecb-recent-1"
+          ],
+          "fact": "ECB 三季度 SAFE 调查显示企业报告银行贷款利率净上升比例为 46%，贷款可得性下降；本轮首次受访者占多数。",
+          "unknown": "46% 是净回答比例而非贷款利率；样本结构显著变化，官方提醒价格与通胀等数值预期的跨期解释需谨慎。",
+          "watch": "后续 SAFE 样本说明、企业融资缺口和信贷统计",
+          "capturedAt": "2026-10-27T14:28:21.967Z"
+        }
+      ]
+    },
+    {
+      "id": "ecb-ces-sep26",
+      "title": "ECB 消费者调查：一年期通胀预期升至 3.1%",
+      "category": "宏观政策",
+      "tags": [
+        "ECB",
+        "CES",
+        "通胀",
+        "消费者预期"
+      ],
+      "assets": [
+        {
+          "name": "欧元区通胀预期",
+          "ticker": "EUR",
+          "relation": "宏观或行业观察对象，不代表具体证券收益"
+        }
+      ],
+      "impact": "近远期预期差异可作为宏观观察维度，但单次调查无法直接决定政策或资产价格方向。",
+      "analysis": "近远期预期差异可作为宏观观察维度，但单次调查无法直接决定政策或资产价格方向。",
+      "versions": [
+        {
+          "date": "2026-10-23",
+          "state": "confirmed",
+          "summary": "ECB 发布 9 月消费者预期调查：未来 12 个月通胀预期中位数由 3.0% 升至 3.1%，三年与五年预期分别维持 2.9% 和 2.5%。",
+          "sourceIds": [
+            "ecb-recent-4"
+          ],
+          "fact": "ECB 发布 9 月消费者预期调查：未来 12 个月通胀预期中位数由 3.0% 升至 3.1%，三年与五年预期分别维持 2.9% 和 2.5%。",
+          "unknown": "这是消费者调查预期，不是已实现通胀、官方预测或加息承诺；9 月报告期与 10 月披露日不同。",
+          "watch": "下一期 CES、实际通胀数据及 ECB 政策声明",
+          "capturedAt": "2026-10-27T14:28:21.967Z"
+        }
+      ]
+    },
+    {
+      "id": "ecb-sesfod-sep26",
+      "title": "ECB 发布证券融资与场外衍生品信贷条件调查",
+      "category": "宏观政策",
+      "tags": [
+        "ECB",
+        "SESFOD",
+        "OTC",
+        "证券融资"
+      ],
+      "assets": [
+        {
+          "name": "欧元证券融资市场",
+          "ticker": "EUR",
+          "relation": "公告主体或明确合作方；不代表收益承诺"
+        }
+      ],
+      "impact": "区分价格条款、抵押折扣与估值争议，有助于避免把总体宽松解释为所有市场风险下降。",
+      "analysis": "区分价格条款、抵押折扣与估值争议，有助于避免把总体宽松解释为所有市场风险下降。",
+      "versions": [
+        {
+          "date": "2026-10-07",
+          "state": "confirmed",
+          "summary": "ECB 公布 9 月 SESFOD 调查，覆盖 6–8 月：总体信贷条件略有放松，多类抵押品融资需求增加，部分衍生品估值争议增加。",
+          "sourceIds": [
+            "ecb-recent-14"
+          ],
+          "fact": "ECB 公布 9 月 SESFOD 调查，覆盖 6–8 月：总体信贷条件略有放松，多类抵押品融资需求增加，部分衍生品估值争议增加。",
+          "unknown": "调查基于 26 家大型银行的定性回答；不等于全部交易规模、实际资金成本或全面风险下降。",
+          "watch": "后续 SESFOD 调查、抵押品流动性与保证金变化",
+          "capturedAt": "2026-10-27T14:28:21.967Z"
+        }
+      ]
+    },
+    {
+      "id": "fed-scf-2025",
+      "title": "美联储发布 2025 年消费者财务调查结果",
+      "category": "宏观政策",
+      "tags": [
+        "Fed",
+        "SCF",
+        "家庭财务",
+        "净资产"
+      ],
+      "assets": [
+        {
+          "name": "美国家庭资产负债",
+          "ticker": "USD",
+          "relation": "宏观或行业观察对象，不代表具体证券收益"
+        }
+      ],
+      "impact": "家庭财富与负债结构可辅助理解消费韧性，需结合分布与滞后性，不能当作实时消费指标。",
+      "analysis": "家庭财富与负债结构可辅助理解消费韧性，需结合分布与滞后性，不能当作实时消费指标。",
+      "versions": [
+        {
+          "date": "2026-10-09",
+          "state": "confirmed",
+          "summary": "美联储发布 2025 年 SCF：2022–2025 年实际家庭净资产中位数增长 2% 至 215,900 美元，持股家庭占比由 58% 降至 56%。",
+          "sourceIds": [
+            "fed-recent-2"
+          ],
+          "fact": "美联储发布 2025 年 SCF：2022–2025 年实际家庭净资产中位数增长 2% 至 215,900 美元，持股家庭占比由 58% 降至 56%。",
+          "unknown": "调查描述 2025 年家庭财务而非当日市场；中位数、均值与持股参与率不可混用，不支持个体投资回报推断。",
+          "watch": "SCF 方法及分组数据、后续消费与信贷统计",
+          "capturedAt": "2026-10-27T14:28:21.967Z"
+        }
+      ]
+    },
+    {
+      "id": "fed-amex-aml",
+      "title": "美联储对 American Express 采取反洗钱执法行动",
+      "category": "并购与监管",
+      "tags": [
+        "American",
+        "Express",
+        "反洗钱",
+        "AML",
+        "美联储"
+      ],
+      "assets": [
+        {
+          "name": "American Express",
+          "ticker": "AXP",
+          "relation": "公告主体或明确合作方；不代表收益承诺"
+        }
+      ],
+      "impact": "合规整改可能影响投入与经营约束，但财务影响需看执法附件及公司正式披露。",
+      "analysis": "合规整改可能影响投入与经营约束，但财务影响需看执法附件及公司正式披露。",
+      "versions": [
+        {
+          "date": "2026-10-08",
+          "state": "confirmed",
+          "summary": "美联储宣布针对 American Express 的执法行动，指出其反洗钱可疑活动识别报告及集团 AML 项目实施存在不足。",
+          "sourceIds": [
+            "fed-recent-3"
+          ],
+          "fact": "美联储宣布针对 American Express 的执法行动，指出其反洗钱可疑活动识别报告及集团 AML 项目实施存在不足。",
+          "unknown": "当前新闻稿未提供罚款金额或利润损失测算；不能将监管缺陷描述为已认定的每一笔洗钱交易。",
+          "watch": "正式执法文件、公司整改进展与财报风险说明",
+          "capturedAt": "2026-10-27T14:28:21.967Z"
+        }
+      ]
+    },
+    {
+      "id": "fed-stress-rules",
+      "title": "美联储敲定压力测试透明度与资本缓冲规则调整",
+      "category": "并购与监管",
+      "tags": [
+        "Fed",
+        "压力测试",
+        "资本缓冲",
+        "银行监管"
+      ],
+      "assets": [
+        {
+          "name": "美国大型银行",
+          "ticker": "USD",
+          "relation": "宏观或行业观察对象，不代表具体证券收益"
+        }
+      ],
+      "impact": "应分开观察资本要求波动与总量；官方预期减少波动不构成任何银行可分红金额承诺。",
+      "analysis": "应分开观察资本要求波动与总量；官方预期减少波动不构成任何银行可分红金额承诺。",
+      "versions": [
+        {
+          "date": "2026-09-30",
+          "state": "confirmed",
+          "summary": "美联储敲定两项压力测试规则：年度征求情景及重大模型调整意见，并计划从 2028 年起对符合条件银行采用最近两次压力测试平均结果计算资本缓冲。",
+          "sourceIds": [
+            "fed-recent-9"
+          ],
+          "fact": "美联储敲定两项压力测试规则：年度征求情景及重大模型调整意见，并计划从 2028 年起对符合条件银行采用最近两次压力测试平均结果计算资本缓冲。",
+          "unknown": "规则已经敲定不等于所有条款当日实施；同篇手续费收入模型调整仍在征求意见，不能视为最终规则。",
+          "watch": "正式规则生效日期、2027 年测试及各行资本缓冲要求",
+          "capturedAt": "2026-10-27T14:28:21.967Z"
+        }
+      ]
+    },
+    {
+      "id": "fed-stablecoin-proposal",
+      "title": "美联储就支付稳定币监管框架两项提案征求意见",
+      "category": "并购与监管",
+      "tags": [
+        "Fed",
+        "GENIUS",
+        "Act",
+        "稳定币",
+        "储备资产"
+      ],
+      "assets": [
+        {
+          "name": "美国支付稳定币行业",
+          "ticker": "USD",
+          "relation": "宏观或行业观察对象，不代表具体证券收益"
+        }
+      ],
+      "impact": "合规储备与发行准入有助于界定支付业务边界，但不意味着任何代币价格、收益或发行资格得到保证。",
+      "analysis": "合规储备与发行准入有助于界定支付业务边界，但不意味着任何代币价格、收益或发行资格得到保证。",
+      "versions": [
+        {
+          "date": "2026-09-24",
+          "state": "planned",
+          "summary": "美联储就 GENIUS Act 下两项支付稳定币提案征求意见，涉及储备资产、资本与风险管理标准及银行申请发行的流程。",
+          "sourceIds": [
+            "fed-recent-12"
+          ],
+          "fact": "美联储就 GENIUS Act 下两项支付稳定币提案征求意见，涉及储备资产、资本与风险管理标准及银行申请发行的流程。",
+          "unknown": "这是针对受美联储监管主体的提案，不是已生效最终规则或所有发行人获准发行；征求意见期自联邦公报发布起计算。",
+          "watch": "联邦公报、公众意见与最终规则或申请批准",
+          "capturedAt": "2026-10-27T14:28:21.967Z"
+        }
+      ]
+    }
+  ],
+  "recentBatch": {
+    "count": 16,
+    "from": "2026-09-24",
+    "to": "2026-10-27",
+    "checkedAt": "2026-10-27T14:28:21.967Z",
+    "eventIds": [
+      "apple-m6-macbook",
+      "apple-m6-imac",
+      "apple-siri-languages",
+      "apple-ipad-mini-oled",
+      "nv-meta-muse",
+      "nv-minerva",
+      "google-rubin-a5x",
+      "nv-supply-capacity",
+      "ecb-bls-oct26",
+      "ecb-safe-q326",
+      "ecb-ces-sep26",
+      "ecb-sesfod-sep26",
+      "fed-scf-2025",
+      "fed-amex-aml",
+      "fed-stress-rules",
+      "fed-stablecoin-proposal"
+    ]
+  }
+}

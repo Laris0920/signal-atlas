@@ -1,0 +1,19 @@
+{
+  "name": "signal-atlas",
+  "version": "3.2.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "python3 -m http.server 4387 --bind 127.0.0.1",
+    "test": "node --test tests/engine.test.js tests/dossier.test.js",
+    "test:ui": "node tests/browser.mjs",
+    "test:sources": "node tests/check-sources.mjs",
+    "test:dossier": "node tests/dossier-browser.mjs",
+    "test:visual": "node tests/archive-browser.mjs",
+    "test:recent": "node tests/recent-browser.mjs"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.14.0",
+    "playwright": "1.64.1"
+  }
+}
