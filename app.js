@@ -1,10 +1,10 @@
-import {STATES, validateKnowledge, filteredEvents, factRecords, coverage, relatedEvents, LAB_STEPS} from './engine.js';
+import {STATES, validateKnowledge, filteredEvents, factRecords, coverage, relatedEvents, LAB_STEPS, processMaterial, applyMaterial} from './engine.js';
 import {briefFor, compareVersions, evidenceGraph, textChanges, titleAt} from './dossier.js';
 import {createPassport} from './passport.js';
 
 const select = selector => document.querySelector(selector);
 const escape = value => String(value ?? '').replace(/[&<>"']/g, character => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[character]));
-const state = {data:null, current:null, version:0, baseline:null, graphMode:null, query:'', category:'all', filter:'all', sort:'recent', visible:8, expanded:false, lab:0};
+const state = {data:null, current:null, version:0, baseline:null, graphMode:null, query:'', category:'all', filter:'all', sort:'recent', visible:8, expanded:false, lab:0, intake:null};
 let toastTimer;
 let storageNotice = false;
 let passportUrl;
@@ -49,6 +49,9 @@ function goToDetail() {
 
 function updateWatch() {
   select('#nav-watch-count').textContent = watched.size;
+  const unread = activity.filter(item => item.unread).length;
+  select('#nav-alert-count').textContent = unread;
+  select('#nav-alert-count').hidden = unread === 0;
   select('#watch-btn').innerHTML = watched.has(state.current?.id) ? '✓ 已关注 · 点击取消' : '＋ 关注事件';
   select('#watch-btn').classList.toggle('watched', watched.has(state.current?.id));
 }
@@ -277,13 +280,81 @@ function showRecord(id) {
   openDialog('证据时间与来源','<p class="muted">' + escape(record.title) + '</p><dl class="time-details"><dt>事件发生时间</dt><dd>' + escape(record.occurredAt ?? '未独立确定') + '<small>' + escape(record.occurredNote) + '</small></dd><dt>原文披露时间</dt><dd>' + record.date + '（日期精度；不虚构时分）</dd><dt>系统抓取 / 核验时间</dt><dd>' + record.capturedAt + '</dd><dt>档案更新时间</dt><dd>' + record.updatedAt + '</dd></dl><p class="muted">抓取时间指此次建库核验，不是原文发布时刻。</p>' + record.sources.map(source => '<article class="source-card"><span class="section-label">' + escape(source.publisher) + '</span><h3>' + escape(source.title) + '</h3><p>' + escape(source.summary) + '</p><a href="' + escape(source.url) + '" target="_blank" rel="noopener noreferrer">打开官方原文 ↗</a></article>').join(''),'SOURCE & TIME');
 }
 
+function showIntake() {
+  state.intake = null;
+  openDialog('材料处理台 · 从原文到通知','<p class="intake-intro">只处理你提交的材料；规则抽取结果必须人工确认。未证实的推测/传闻只进入复核队列，不改变真实档案结论。</p><form id="intake-form" class="intake-form"><label>材料标题<input id="intake-title" required placeholder="例如：NVIDIA 与 SoftBank 宣布终止 Arm 收购"></label><label>发布方<input id="intake-publisher" required placeholder="官方机构或发布方"></label><label>披露日期<input id="intake-date" required type="date"></label><label>官方原文 URL<input id="intake-url" required type="url" placeholder="https://..."></label><label>正文或摘要<textarea id="intake-body" required rows="5" placeholder="粘贴原文片段或可靠摘要；不要把搜索结果页当作证据"></textarea></label><div class="intake-actions"><button type="button" class="outline-btn" id="intake-demo">填入演示材料</button><button type="submit" class="primary-btn">解析材料 →</button></div></form><div id="intake-result" hidden></div>','MATERIAL INTAKE');
+  select('#intake-form').addEventListener('submit', event => {
+    event.preventDefault();
+    try {
+      const material = {title:select('#intake-title').value,publisher:select('#intake-publisher').value,disclosedAt:select('#intake-date').value,url:select('#intake-url').value,body:select('#intake-body').value};
+      const result = processMaterial(material,state.data);
+      state.intake = {material,result};
+      renderIntakeResult(result);
+    } catch (error) {
+      select('#intake-result').hidden = false;
+      select('#intake-result').innerHTML = '<div class="error-box"><b>材料暂不能处理</b><p>' + escape(error.message) + '</p></div>';
+    }
+  });
+  select('#intake-demo').addEventListener('click', () => {
+    const source = state.data.sources.find(item => item.id === 'arm-end') || state.data.sources[0];
+    const event = state.data.events.find(item => item.id === 'nvidia-arm');
+    select('#intake-title').value = source.title;
+    select('#intake-publisher').value = source.publisher;
+    select('#intake-date').value = source.publishedAt;
+    select('#intake-url').value = source.url;
+    select('#intake-body').value = source.summary + '（演示：该链接已在档案中，用于验证去重与冲突识别。）';
+    toast('已填入 ' + (event?.title || '演示材料') + '，点击解析查看处理链');
+  });
+}
+
+function renderIntakeResult(result) {
+  const candidate = result.candidate ? state.data.events.find(event => event.id === result.candidate.eventId) : null;
+  const status = result.duplicate ? '重复材料' : result.type === 'fact' ? '待人工确认' : '进入复核队列';
+  const action = result.duplicate ? '<p class="muted">无需再次写入；原文已保留在证据库。</p>' : '<button class="primary-btn" data-action="intake-apply">' + (result.type === 'fact' ? '确认归并并更新结论' : '加入复核队列（不更新结论）') + '</button>';
+  select('#intake-result').hidden = false;
+  select('#intake-result').innerHTML = '<section class="intake-result"><div class="intake-steps"><span class="done">1 解析</span><span class="done">2 归并</span><span class="done">3 分类</span><span class="done">4 冲突判断</span><span class="' + (result.type === 'fact' && !result.duplicate ? 'next' : 'done') + '">5 ' + (result.type === 'fact' && !result.duplicate ? '待确认' : '结论/通知') + '</span></div><div class="intake-summary"><span class="status-chip ' + (result.type === 'fact' ? 'fact' : 'partial') + '">' + status + '</span><strong>' + escape(result.typeLabel) + ' · ' + escape(result.relationLabel) + '</strong></div><dl class="intake-grid"><dt>候选事件</dt><dd>' + (candidate ? escape(candidate.title) + '<small>' + escape(result.candidate.reason) + '</small>' : '未命中现有事件，将新建待分类档案') + '</dd><dt>冲突判断</dt><dd>' + (result.conflict ? escape(result.conflict.message) + '<small>旧状态：' + escape(STATES[result.conflict.previousState]?.label || result.conflict.previousState) + ' → 新状态：' + escape(STATES[result.conflict.nextState]?.label || result.conflict.nextState) + '</small>' : '未发现需要升级的状态冲突') + '</dd><dt>结论动作</dt><dd>' + escape(result.conclusion) + '</dd></dl><div class="intake-actions">' + action + '</div></section>';
+}
+
+function applyIntake() {
+  if (!state.intake) return;
+  const result = applyMaterial(state.data,state.intake.result);
+  if (!result.changed) {
+    toast(result.reason === 'date-before-current' ? '披露日期早于当前版本，已停止写入' : '这条材料已存在，没有重复归并');
+    return;
+  }
+  state.data = result.data;
+  state.intake.applied = true;
+  const event = result.event;
+  if (result.reviewOnly) {
+    persist();
+    select('#intake-result').innerHTML = '<div class="relation-note"><b>已进入人工复核队列</b><p>当前材料未改变事实状态；确认来源、适用范围和证据类型后，再决定是否升级为版本。</p></div>';
+    toast('材料已入复核队列，未改变结论');
+    return;
+  }
+  if (event && watched.has(event.id)) {
+    const oldLabel = result.previousState ? STATES[result.previousState].label : '无前版';
+    const newLabel = STATES[result.nextState]?.label || result.nextState;
+    activity.unshift({eventId:event.id,time:new Date().toISOString(),unread:true,type:'material-change',text:'材料更新：' + event.title + ' · ' + oldLabel + ' → ' + newLabel,detail:'原因：' + state.intake.result.relationLabel + '；出处：' + state.intake.result.material.publisher});
+    activity.splice(20);
+  }
+  persist();
+  updateWatch();
+  select('#stat-events').textContent = state.data.events.length;
+  select('#stat-evidence').textContent = state.data.sources.length;
+  select('#stat-versions').textContent = state.data.events.reduce((count,item) => count + item.versions.length,0);
+  if (event) chooseEvent(event.id);
+  select('#intake-result').innerHTML = '<div class="relation-note"><b>已确认写入版本</b><p>旧证据保留，新材料已追加到事件时间线；若该事件已关注，变化已进入站内通知。</p></div>';
+  toast('归并完成，结论与关注动态已更新');
+}
+
 function showMethod() {
   openDialog('每个结论，都有一条证据链','<div class="method-explainer"><h3>01 · 归并到同一件事</h3><p>以主体、动作、对象和报告期 / 地区区分事件。本库人工校验事件 ID；同一公告的财报与回购分别建档，通过主体关联。</p><h3>02 · 分清谁说了什么</h3><p>官方材料作为事实依据；产品分析标为观点。推测和传闻不升级为事实，同源文档不计为多个独立出处。</p><h3>03 · 版本只追加，历史可回看</h3><p>历史回放只读取该版本及以前的材料。官方终止会使先前计划失效，不删除原始计划。</p><h3>04 · 覆盖率有明确分母</h3><p>分别计算当前事实记录的官方出处、披露日期、收录记录、独立发生日期完整度，再取四项等权平均。未知时间如实保留为空。此分值不是发生概率。</p><h3>05 · 数据范围</h3><p>收录 30 条档案：16 条近期官方披露（2026-09-24 至 2026-10-27）与 14 条历史案例（2020–2024）。当前没有接入实时行情、外部 AI 推理接口或后台推送；中文摘要已逐项对照原文核验。</p></div>','HOW IT WORKS');
 }
 
 function showWatch() {
   const saved = state.data.events.filter(event => watched.has(event.id));
-  openDialog('我的关注 · ' + saved.length + ' 个事件','<p class="muted">收藏保存在此浏览器。站内动态记录你的历史回放，不代表有新的市场披露。</p><div class="watch-items">' + (saved.length ? saved.map(event => '<div class="saved-row"><button data-event-id="' + event.id + '">' + escape(event.title) + '</button><button class="text-btn" data-unwatch="' + event.id + '">取消关注</button></div>').join('') : '<div class="empty-state">还没有收藏。先关注一条你想继续研究的事件。</div>') + '</div><h3>站内动态</h3>' + (activity.length ? activity.slice(0,8).map(item => '<article class="activity-item"><small>' + escape(item.time) + '</small><p>' + escape(item.text) + '</p></article>').join('') : '<p class="muted">关注事件后，切换历史版本即可看到变化记录。</p>'),'YOUR WATCHLIST');
+  const unread = activity.filter(item => item.unread).length;
+  openDialog('我的关注 · ' + saved.length + ' 个事件','<p class="muted">收藏保存在此浏览器；材料导致新版本时，站内通知会记录旧结论、新结论、原因和出处。' + (unread ? '当前有 ' + unread + ' 条未读更新。' : '') + '</p><div class="watch-items">' + (saved.length ? saved.map(event => '<div class="saved-row"><button data-event-id="' + event.id + '">' + escape(event.title) + '</button><button class="text-btn" data-unwatch="' + event.id + '">取消关注</button></div>').join('') : '<div class="empty-state">还没有收藏。先关注一条你想继续研究的事件。</div>') + '</div><h3>站内动态</h3>' + (activity.length ? activity.slice(0,8).map(item => '<article class="activity-item ' + (item.unread ? 'unread' : '') + '"><small>' + escape(item.time) + (item.unread ? ' · 未读材料更新' : '') + '</small><p>' + escape(item.text) + '</p>' + (item.detail ? '<span>' + escape(item.detail) + '</span>' : '') + '</article>').join('') : '<p class="muted">关注事件后，确认新材料即可看到变化通知。</p>') + (unread ? '<button class="outline-btn" data-action="read-notifications">标记通知已读</button>' : '') + '</div>','YOUR WATCHLIST');
 }
 
 function showSources() {
@@ -391,6 +462,7 @@ select('#score-help').addEventListener('click',showMethod);
 select('#watch-nav').addEventListener('click',() => state.data ? showWatch() : toast('请先加载归档'));
 select('#manage-watch').addEventListener('click',showWatch);
 select('#sources-nav').addEventListener('click',() => state.data ? showSources() : toast('请先加载归档'));
+select('#intake-nav').addEventListener('click',() => state.data ? showIntake() : toast('请先加载归档'));
 select('#lab-nav').addEventListener('click',showLab);
 select('#dialog-close').addEventListener('click',() => select('#detail-dialog').close());
 select('#dialog-confirm').addEventListener('click',() => select('#detail-dialog').close());
@@ -417,6 +489,8 @@ document.addEventListener('click',event => {
   if (action?.dataset.action === 'reset') resetFilters();
   if (action?.dataset.action === 'retry') loadKnowledge();
   if (action?.dataset.action === 'export-markdown') exportCard();
+  if (action?.dataset.action === 'intake-apply') applyIntake();
+  if (action?.dataset.action === 'read-notifications') { activity.forEach(item => { item.unread = false; }); persist(); updateWatch(); showWatch(); }
   const unwatch = event.target.closest('[data-unwatch]');
   if (unwatch) {watched.delete(unwatch.dataset.unwatch);persist();updateWatch();applyFilters();showWatch()}
   const lab = event.target.closest('[data-lab]');

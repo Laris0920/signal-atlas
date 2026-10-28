@@ -153,6 +153,9 @@ button:hover:not(:disabled), a:hover { text-decoration-thickness: 2px; }
   .evidence-map { column-gap: 36px; }
 }
 @media(max-width:760px) {
+  .main-nav { gap: 4px; justify-content: space-between; }
+  .main-nav button, .main-nav a { font-size: 10px; }
+  .main-nav .nav-count { padding-inline: 4px; margin-left: 2px; }
   .hero-stage { background-image: linear-gradient(90deg,#0b1729f5,#0b1729c9),url('assets/archive-hero.webp'); }
   .hero { padding-block: 28px 22px; }
   .hero-grid { grid-template-columns: 1fr; min-height: 0; }
@@ -175,3 +178,103 @@ button:hover:not(:disabled), a:hover { text-decoration-thickness: 2px; }
   .brief-grid p, .graph-list-entry p { font-size: 15px; }
 }
 @media(prefers-reduced-motion:reduce) { *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; } }
+
+/* Midnight Archive / unified rounded surfaces */
+:root {
+  --radius-control: 10px;
+  --radius-card: 14px;
+  --radius-panel: 16px;
+}
+
+button,
+input,
+select,
+textarea,
+dialog {
+  border-radius: var(--radius-control);
+}
+
+.search-bar,
+.panel,
+.intelligence-strip,
+.event-card,
+.event-summary,
+.signal-card,
+.brief-panel,
+.version-panel,
+.compare-panel,
+.graph-panel,
+.timeline-panel,
+.verdict-panel,
+.score-panel,
+.relation-panel,
+.watch-panel,
+.related-panel,
+.method-card,
+.source-card,
+.map-node,
+.version-node,
+.comparison-pair p,
+.relation-note,
+.lab-disclaimer,
+.error-box {
+  border-radius: var(--radius-card);
+}
+
+.search-bar,
+.panel,
+.intelligence-strip,
+.method-card,
+.source-card,
+.map-node,
+.version-node,
+.comparison-pair p {
+  overflow: hidden;
+}
+
+.search-bar button,
+.primary-btn,
+.outline-btn,
+.load-more,
+.dossier-stamp,
+.archive-seal,
+.ai-badge,
+.type-label,
+.status-chip,
+.search-bar kbd,
+.relation-note,
+.lab-disclaimer,
+.toast {
+  border-radius: var(--radius-control);
+}
+
+.tag,
+.nav-count {
+  border-radius: 999px;
+}
+
+.dialog-close,
+.info,
+.relation-count {
+  border-radius: 50%;
+}
+
+.method-card {
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--gold-300);
+  padding: 18px;
+}
+
+dialog {
+  border-radius: var(--radius-panel);
+}
+
+@media(max-width:760px) {
+  dialog {
+    border-radius: var(--radius-panel);
+  }
+
+  .method-card {
+    padding: 16px;
+  }
+}

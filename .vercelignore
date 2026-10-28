@@ -1,0 +1,9 @@
+node_modules
+tests
+test-results
+artifacts
+design
+*.zip
+*.log
+.git
+package-lock.json

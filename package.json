@@ -1,6 +1,6 @@
 {
   "name": "signal-atlas",
-  "version": "3.2.0",
+  "version": "3.3.0",
   "private": true,
   "type": "module",
   "scripts": {
@@ -10,7 +10,8 @@
     "test:sources": "node tests/check-sources.mjs",
     "test:dossier": "node tests/dossier-browser.mjs",
     "test:visual": "node tests/archive-browser.mjs",
-    "test:recent": "node tests/recent-browser.mjs"
+    "test:recent": "node tests/recent-browser.mjs",
+    "test:intake": "node tests/intake-browser.mjs"
   },
   "devDependencies": {
     "@axe-core/playwright": "^4.14.0",
