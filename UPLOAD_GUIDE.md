@@ -2,6 +2,8 @@
 
 仓库：https://github.com/Laris0920/signal-atlas ，分支 `main`。
 
+**本次已代传完成，无需你重复手动上传。** 通过 GitHub 官方授权核实账号 Laris0920 及仓库写权限后，新增/覆盖35个路径、核验全部41个源码文件，没有删除其他文件。新版公开站：https://instant-onyx-p1wbm1g-8hryvn2pzr-2601.vercel.app/#event=fed-cycle 。以下步骤保留供以后维护。
+
 ## 文件在哪里
 
 最终 ZIP 解压后，进入 **`02_源代码仓库/上传到GitHub的源码/`**，这里是完整项目，不需要从旧附件拼文件。

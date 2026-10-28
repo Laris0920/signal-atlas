@@ -2,7 +2,7 @@ import {chromium} from 'playwright';
 import fs from 'node:fs/promises';
 import {createHash} from 'node:crypto';
 
-const root = 'https://instant-onyx-p1wbm1g-lj4uidpg0-8hryvn2pzr-2601.vercel.app/';
+const root = process.env.AUDIT_URL || 'https://instant-onyx-p1wbm1g-lj4uidpg0-8hryvn2pzr-2601.vercel.app/';
 const repo = 'https://github.com/Laris0920/signal-atlas';
 const output = new URL('../test-results/',import.meta.url);
 await fs.mkdir(output,{recursive:true});
@@ -49,7 +49,7 @@ try {
   report.browser.mobileNoOverflow=await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth);
   report.browser.errors=errors;
 } finally {await browser.close()}
-report.notes.push('匿名200不代表最新源码上线；检查时指定固定快照缺少材料入口，主题图片路径404。');
+report.notes.push(report.browser.intakeAvailable && report.resources.find(item=>item.file==='assets/archive-hero.webp')?.status===200 ? '本次公开站有材料处理入口且主题图片HTTP200；与指定旧快照的检查区分保存。' : '匿名200不代表最新源码上线；检查时缺少材料入口或主题图片未正常加载。');
 report.notes.push('Fed正文检查仅覆盖三组关键区间与降幅，不表示所有近期摘要已逐句重审。');
 await fs.writeFile(new URL('final-live-audit.json',output),JSON.stringify(report,null,2));
 console.log(JSON.stringify(report,null,2));

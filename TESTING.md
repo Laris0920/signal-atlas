@@ -18,10 +18,12 @@ TEST_URL=http://127.0.0.1:4399/ npm run test:intake
 TEST_URL=http://127.0.0.1:4399/ node tests/accessibility.mjs
 TEST_URL=http://127.0.0.1:4399/ node tests/dossier-accessibility.mjs
 npm run test:sources
-node tests/submission-audit.mjs
+AUDIT_URL=https://instant-onyx-p1wbm1g-8hryvn2pzr-2601.vercel.app/ node tests/submission-audit.mjs
 ```
 
 输出至 `test-results/`；本次精确结果、命令日志与抽样截图见交付包 `06_测试说明/`，不沿用旧报告的通过数。
+
+本次还将所有浏览器回归的 `TEST_URL` 指向新版公开域名执行；对应日志与报告在新版交付包中。隔离材料只拦截测试浏览器的 JSON 响应，不修改线上数据。
 
 ## 用例矩阵
 
